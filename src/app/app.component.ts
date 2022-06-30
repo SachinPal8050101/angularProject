@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularProject';
+  bestMovieEver= false;
+  onClick(event: any){
+    console.log('click',event);
+  }
 }
