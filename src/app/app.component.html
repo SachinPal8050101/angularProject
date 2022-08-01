@@ -1,14 +1,12 @@
-<!-- <div class="mainDiv">
-      <p>{{movieName1.name}}</p>
-      <button (click)="handleCount1()" id="'btn">Click</button>
-</div>
 
-<div class="mainDiv">
-  <p>{{movieName2.name}}</p>
-  <button (click)="handleCount2()" id="'btn">Click</button>
-</div> -->
 <div>
-<app-child-component [movieData]= "movieName1" (handleCount)= "handleCount($event)"></app-child-component>
-<app-child-component [movieData]= "movieName2" (handleCount)= "handleCount($event)"></app-child-component>
+  <div class="rental">
+      <p>Rental {{rentalService.movieName1.count + rentalService.movieName2.count}}</p>
+      <button (click)= "rentalService.clearRentalService()">Clear Rental </button>
+  </div>
+  <div class="movieListDiv">
+<app-child-component [movieData]= "rentalService.movieName1" (handleCount)= "rentalService.handleCount($event)"></app-child-component>
+<app-child-component [movieData]= "rentalService.movieName2" (handleCount)= "rentalService.handleCount($event)"></app-child-component>
+</div>
 </div>
 

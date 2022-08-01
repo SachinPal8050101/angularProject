@@ -8,3 +8,10 @@
     margin: 0;
     border-width: 1;
 }
+.rental{
+    background-color: aqua;
+    width: 20%;
+}
+.movieListDiv{
+    flex-direction: row;
+}
