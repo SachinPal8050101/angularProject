@@ -1,14 +1,6 @@
-<!-- <div class="mainDiv">
-      <p>{{movieName1.name}}</p>
-      <button (click)="handleCount1()" id="'btn">Click</button>
-</div>
+<p>PAppp</p>
+<button routerLink="/child1">Move to Child1</button>
+<button routerLink="/child2" >Move to Child2</button>
 
-<div class="mainDiv">
-  <p>{{movieName2.name}}</p>
-  <button (click)="handleCount2()" id="'btn">Click</button>
-</div> -->
-<div>
-<app-child-component [movieData]= "movieName1" (handleCount)= "handleCount($event)"></app-child-component>
-<app-child-component [movieData]= "movieName2" (handleCount)= "handleCount($event)"></app-child-component>
-</div>
+<router-outlet></router-outlet>
 
