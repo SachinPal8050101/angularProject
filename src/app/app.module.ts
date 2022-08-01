@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Chaild1Component } from './chaild1/chaild1.component';
 import { Chaild2Component } from './chaild2/chaild2.component';
+import { NewAppModule } from './new-app/new-app.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Chaild2Component } from './chaild2/chaild2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NewAppModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

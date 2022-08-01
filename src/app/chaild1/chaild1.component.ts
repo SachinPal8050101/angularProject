@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chaild1',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Chaild1Component implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router ) { }
 
   ngOnInit(): void {
   }
-
+  onSubmit(){
+    this.route.navigate(['/newModule'],{state:{data:"abcd"}})
+  }
 }
