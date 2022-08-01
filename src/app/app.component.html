@@ -1,6 +1,14 @@
-<div class="div">
-  <h1>adsadsadasda {{title}}</h1>
-  <button [disabled]="!bestMovieEver">Best Movie Ever</button>
-  <button (click)="onClick('event')">Click Event</button>
+<!-- <div class="mainDiv">
+      <p>{{movieName1.name}}</p>
+      <button (click)="handleCount1()" id="'btn">Click</button>
 </div>
-<app-child-component [movie]="title"></app-child-component>
+
+<div class="mainDiv">
+  <p>{{movieName2.name}}</p>
+  <button (click)="handleCount2()" id="'btn">Click</button>
+</div> -->
+<div>
+<app-child-component [movieData]= "movieName1" (handleCount)= "handleCount($event)"></app-child-component>
+<app-child-component [movieData]= "movieName2" (handleCount)= "handleCount($event)"></app-child-component>
+</div>
+
