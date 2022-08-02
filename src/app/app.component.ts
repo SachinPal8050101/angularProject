@@ -1,20 +1,22 @@
 import { Component, Input, OnChanges, OnInit ,OnDestroy} from '@angular/core';
-import { FlopService } from './FlopService.service';
+import { CalculateCurrencyPipe } from './calculate-currency.pipe';
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [CalculateCurrencyPipe]
 })
 export class AppComponent implements OnInit,OnChanges {
 
+  datePipeString : Number | undefined;
 
-  constructor(){
+  // constructor(public datePipe: CalculateCurrencyPipe){
+  //    this.datePipeString=datePipe.transform(38)
+  // }
 
-  }
 
-  
   ngOnInit(): void {
   }
   ngOnChanges(): void {

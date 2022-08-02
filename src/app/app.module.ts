@@ -1,24 +1,18 @@
+import { CurrencyPipe } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { Chaild1Component } from './chaild1/chaild1.component';
-import { Chaild2Component } from './chaild2/chaild2.component';
-import { NewAppModule } from './new-app/new-app.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { CalculateCurrencyPipe } from './calculate-currency.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Chaild1Component,
-    Chaild2Component,
+    CalculateCurrencyPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReactiveFormsModule,
-    NewAppModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
